@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ScreenTapDetector : MonoBehaviour
+public class TapDetector : MonoBehaviour
 {
     private bool tapDetected = false;
 
@@ -21,6 +21,12 @@ public class ScreenTapDetector : MonoBehaviour
                 // Установка флага tapDetected в true при начале касания
                 tapDetected = true;
             }
+
+        }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            tapDetected = true;
         }
     }
 
